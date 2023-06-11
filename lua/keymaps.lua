@@ -20,7 +20,7 @@ vim.g.mapleader = " "
 keymap("n", "<leader>a", "gg<S-v>G", opts)
 
 --- Consider keymap later.
-keymap("c", "j", 'pumvisible() ? "\\<C-n>" : "j"', {expr = true, noremap = true})
-keymap("c", "k", 'pumvisible() ? "\\<C-p>" : "k"', {expr = true, noremap = true})
-keymap("i", "j", 'pumvisible() ? "\\<C-n>" : "j"', {expr = true, noremap = true})
-keymap("i", "k", 'pumvisible() ? "\\<C-p>" : "k"', {expr = true, noremap = true})
+keymap("c", "<C-j>", 'pumvisible() ? "\\<C-n>" : "j"', {expr = true, noremap = true})
+keymap("c", "<C-k>", 'pumvisible() ? "\\<C-p>" : "k"', {expr = true, noremap = true})
+keymap("i", "<C-j>", 'pumvisible() ? "\\<C-n>" : "j"', {expr = true, noremap = true})
+keymap("i", "<C-k>", 'pumvisible() ? "\\<C-p>" : "k"', {expr = true, noremap = true})
